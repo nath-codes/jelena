@@ -4,6 +4,6 @@ export default {
     body: "montserrat"
   },
   colors: {
-    delftBlue: "#070493"
+    delftBlue: "#293276"
   }
 };
