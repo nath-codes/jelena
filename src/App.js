@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { ThemeProvider } from "styled-components";
-import { injectGlobal } from "styled-components";
+import { ThemeProvider, injectGlobal } from "styled-components";
 import theme from "./constants/theme";
 import Heading from "./components/Heading";
 
