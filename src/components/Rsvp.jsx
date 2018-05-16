@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./Section";
+import Heading from "./Heading";
 import Section from "./Section";
 
 const Hero = () => (

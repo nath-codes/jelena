@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./Section";
+import Heading from "./Heading";
 import Section from "./Section";
 import Map from "./Map";
 import Text from "./Text";
