@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Rsvp from "./components/Rsvp";
 import Timetable from "./components/Timetable";
 import Directions from "./components/Directions";
+import Gifts from "./components/Gifts";
 
 injectGlobal`
   html {
@@ -43,6 +44,7 @@ class App extends Component {
           <Rsvp />
           <Timetable />
           <Directions />
+          <Gifts />
         </div>
       </ThemeProvider>
     );
