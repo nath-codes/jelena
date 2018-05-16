@@ -3,6 +3,7 @@ import { ThemeProvider, injectGlobal } from "styled-components";
 import theme from "./constants/theme";
 import Hero from "./components/Hero";
 import Rsvp from "./components/Rsvp";
+import Timetable from "./components/Timetable";
 
 injectGlobal`
   html {
@@ -39,6 +40,7 @@ class App extends Component {
         <div className="App">
           <Hero />
           <Rsvp />
+          <Timetable />
         </div>
       </ThemeProvider>
     );
