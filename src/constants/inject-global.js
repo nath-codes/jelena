@@ -17,7 +17,7 @@ export default injectGlobal`
     color: '#333';
     font-family: 'montserrat';
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1;
   }
 
   a {
