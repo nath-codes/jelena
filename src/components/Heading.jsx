@@ -7,6 +7,7 @@ const StyledHeading = styled.h2`
   font-size: ${modularScale(5)};
   font-weight: 400;
   line-height: 1;
+  text-align: center;
 `;
 
 export default StyledHeading;

@@ -14,7 +14,7 @@ export default injectGlobal`
   }
 
   body {
-    color: '#333';
+    color: #333;
     font-family: 'montserrat';
     font-size: 16px;
   }
