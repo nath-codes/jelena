@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ThemeProvider, injectGlobal } from "styled-components";
 import theme from "./constants/theme";
 import Hero from "./components/Hero";
+import Rsvp from "./components/Rsvp";
 
 injectGlobal`
   html {
@@ -37,6 +38,7 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <div className="App">
           <Hero />
+          <Rsvp />
         </div>
       </ThemeProvider>
     );
