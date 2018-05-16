@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ThemeProvider, injectGlobal } from "styled-components";
 import theme from "./constants/theme";
-import Heading from "./components/Heading";
+import Hero from "./components/Hero";
 
 injectGlobal`
   html {
@@ -35,7 +35,9 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <div className="App" />
+        <div className="App">
+          <Hero />
+        </div>
       </ThemeProvider>
     );
   }
