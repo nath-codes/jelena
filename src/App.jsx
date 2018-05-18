@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ThemeProvider } from "styled-components";
 import theme from "./constants/theme";
-import Border from "./components/Border";
+import Frame from "./components/Frame";
 import Hero from "./components/Hero";
 import Rsvp from "./components/Rsvp";
 import Timetable from "./components/Timetable";
@@ -14,7 +14,10 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <div className="App">
-          <Border />
+          <Frame position="top-left" />
+          <Frame position="top-right" />
+          <Frame position="bottom-left" />
+          <Frame position="bottom-right" />
           <Hero />
           <Rsvp />
           <Timetable />
