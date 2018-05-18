@@ -7,7 +7,6 @@ const StyledFrame = styled.div`
   height: 300px;
   position: fixed;
   width: 300px;
-  z-index: 99;
 
   ${props =>
     props.position === "bottom-left" &&
