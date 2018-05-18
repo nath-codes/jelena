@@ -4,6 +4,7 @@ import styled from "styled-components";
 const placeId = "ChIJW9LhQoWScUgRpUZbE5MC6tY";
 const StyledIframe = styled.iframe`
   border: 0;
+  filter: grayscale(1);
 `;
 
 const src = `https://www.google.com/maps/embed/v1/place?key=${
