@@ -1,18 +1,38 @@
 import React from "react";
+import styled from "styled-components";
+import { modularScale } from "polished";
 import Heading from "./Heading";
 import Section from "./Section";
-import Text from "./Text";
+import List from "./List";
+import timetable from "../constants/timetable";
 
-const Hero = () => (
+const TimetableItem = styled.li`
+  align-items: center;
+  display: flex;
+  font-size: ${modularScale(1, "1em", "perfectFifth")};
+  margin-bottom: 24px;
+
+  .time {
+    margin-right: 24px;
+  }
+
+  .title {
+    text-align: left;
+  }
+`;
+
+const TimeTable = () => (
   <Section>
     <Heading>Timetable</Heading>
-    <Text>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima
-      deserunt dolore animi itaque nemo doloremque? Aut, aperiam in quam commodi
-      corrupti laborum assumenda, dolorum impedit exercitationem nesciunt atque
-      vel!
-    </Text>
+    <List>
+      {timetable.map(item => (
+        <TimetableItem key={item.time}>
+          <div className="time">{item.time}</div>
+          <div className="title">{item.title}</div>
+        </TimetableItem>
+      ))}
+    </List>
   </Section>
 );
 
-export default Hero;
+export default TimeTable;
