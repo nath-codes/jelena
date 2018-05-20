@@ -1,11 +1,15 @@
 import styled from "styled-components";
+import spacer from "../mixins/spacer";
 
 const StyledSection = styled.section`
+  align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   height: 100vh;
-  width: 90%;
+  margin: 0 auto;
+  padding-top: ${spacer(2)};
+  position: relative;
+  width: 70%;
 `;
 
 export default StyledSection;
