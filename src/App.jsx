@@ -20,8 +20,8 @@ class App extends Component {
           <Frame position="bottom-right" />
           <Hero />
           <Rsvp />
-          <Timetable />
           <Directions />
+          <Timetable />
           <Gifts />
         </div>
       </ThemeProvider>
