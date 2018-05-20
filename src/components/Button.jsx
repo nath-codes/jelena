@@ -1,3 +1,4 @@
+import spacer from "../mixins/spacer";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -6,7 +7,7 @@ const Button = styled.button`
   background: none;
   color: ${props => props.theme.colors.delftBlue};
   cursor: pointer;
-  padding: 15px 45px;
+  padding: 13px ${spacer(2)};
   transition: all ${props => props.theme.transition.duration};
 
   &:hover {
