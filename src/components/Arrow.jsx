@@ -15,12 +15,16 @@ const StyledArrow = styled.svg`
   animation: ${rotate360} 1s ease-in-out;
   animation-iteration-count: 3;
   fill: ${props => props.theme.colors.delftBlue};
-  width: ${spacer(2)};
+  height: ${spacer(1)};
 `;
 
-const Arrow = () => (
-  <StyledArrow xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-    <path d="M225.813 48.907L128 146.72 30.187 48.907 0 79.093l128 128 128-128" />
+const Arrow = props => (
+  <StyledArrow
+    className={props.className}
+    viewBox="0 0 256 160"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M225.813.907L128 98.72 30.187.907 0 31.093l128 128 128-128" />
   </StyledArrow>
 );
 
