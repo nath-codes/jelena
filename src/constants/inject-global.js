@@ -5,6 +5,7 @@ export default injectGlobal`
   ${normalize()}
   html {
     box-sizing: border-box;
+    line-height: 1;
   }
 
   *,
