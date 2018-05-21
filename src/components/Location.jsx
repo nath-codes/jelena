@@ -4,17 +4,20 @@ import Section from "./Section";
 import Map from "./Map";
 import Text from "./Text";
 
-const Hero = () => (
-  <Section>
+const StyledLocation = Section.extend`
+  .address {
+    text-align: center;
+  }
+`;
+
+const Location = () => (
+  <StyledLocation>
     <Heading>Location</Heading>
     <Map />
-    <Text>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima
-      deserunt dolore animi itaque nemo doloremque? Aut, aperiam in quam commodi
-      corrupti laborum assumenda, dolorum impedit exercitationem nesciunt atque
-      vel!
+    <Text className="address" size="large">
+      Kings Weston House<br />Kings Weston Lane<br />Bristol<br />BS11 0UR
     </Text>
-  </Section>
+  </StyledLocation>
 );
 
-export default Hero;
+export default Location;
