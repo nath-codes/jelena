@@ -9,7 +9,7 @@ const StyledSection = styled.section`
   margin: 0 auto;
   padding-top: ${spacer(2)};
   position: relative;
-  width: 70%;
+  width: 80%;
 `;
 
 export default StyledSection;
