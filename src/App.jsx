@@ -5,7 +5,7 @@ import Frame from "./components/Frame";
 import Hero from "./components/Hero";
 import Rsvp from "./components/Rsvp";
 import Timetable from "./components/Timetable";
-import Directions from "./components/Directions";
+import Location from "./components/Location";
 import Gifts from "./components/Gifts";
 import "./constants/inject-global";
 
@@ -20,7 +20,7 @@ class App extends Component {
           <Frame position="bottom-right" />
           <Hero />
           <Rsvp />
-          <Directions />
+          <Location />
           <Timetable />
           <Gifts />
         </div>

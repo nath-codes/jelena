@@ -6,7 +6,7 @@ import Text from "./Text";
 
 const Hero = () => (
   <Section>
-    <Heading>Directions</Heading>
+    <Heading>Location</Heading>
     <Map />
     <Text>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima
