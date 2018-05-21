@@ -4,9 +4,9 @@ import tile from "../assets/img/tile.png";
 const StyledFrame = styled.div`
   background: url(${tile}) no-repeat;
   background-size: contain;
-  height: 300px;
+  height: 250px;
   position: fixed;
-  width: 300px;
+  width: 250px;
 
   ${props =>
     props.position === "bottom-left" &&
