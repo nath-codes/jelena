@@ -1,11 +1,13 @@
 import React from "react";
 import Heading from "./Heading";
 import Section from "./Section";
+import Form from "./Form";
 
-const Hero = () => (
+const Rsvp = () => (
   <Section>
     <Heading>RSVP</Heading>
+    <Form />
   </Section>
 );
 
-export default Hero;
+export default Rsvp;
