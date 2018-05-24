@@ -5,7 +5,7 @@ const StyledSection = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding-top: ${spacer(2)};
   position: relative;
