@@ -5,6 +5,7 @@ export default {
   },
   colors: {
     delftBlue: "#1b56c5",
+    black: "#333",
     white: "#fff"
   },
   transition: {
