@@ -8,36 +8,84 @@ import FormHeading from "./FormHeading";
 import Button from "./Button";
 import { FormList, FormListItem } from "./FormList";
 
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  min-width: 50vw;
+
+`;
+
 class Form extends Component {
-  componentDidMount() {}
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      attending: "Yes",
+      dessert: "",
+      dietaryRequirements: "",
+      fullName: "",
+      main: "",
+      sending: false,
+      sent: false,
+      starter: ""
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+  componentDidMount() {
+  }
+
+  handleChange(event) {
+    const { target } = event;
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    const name = target.name;
+    this.setState({ [name]: value });
+  }
 
   render() {
     return (
-      <ReactForm>
-        {formApi => (
-          <StyledForm onSubmit={formApi.submitForm} id="form1" className="mb-4">
-            <Fieldset>
-              <Input type="text" placeholder="Enter your name here" />
-            </Fieldset>
-            <FormHeading>Attending</FormHeading>
-            <Fieldset>
-              <FormList>
-                <FormListItem orphan>
-                  <Input
-                    type="radio"
-                    name="attending"
-                    value="yes"
-                    checked="checked"
-                  />
-                  <Label>Yes</Label>
-                </FormListItem>
-                <FormListItem>
-                  <Input type="radio" name="attending" value="no" />
-                  <Label>No</Label>
-                </FormListItem>
-              </FormList>
-            </Fieldset>
+      <StyledForm>
+        <Fieldset>
+          <Input
+            name="fullName"
+            placeholder="Enter your name here"
+            type="text"
+            required="required"
+            autoFocus="autoFocus"
+            value={this.state.fullName}
+            onChange={this.handleChange}
+          />
+        </Fieldset>
 
+        <FormHeading>Attending</FormHeading>
+
+        <Fieldset>
+          <FormList>
+            <FormListItem orphan>
+              <Label>
+                <Input
+                  name="attending"
+                  type="radio"
+                  value="Yes"
+                  onChange={this.handleChange}
+                  defaultChecked
+                />Yes
+              </Label>
+            </FormListItem>
+            <FormListItem>
+              <Input
+                name="attending"
+                type="radio"
+                value="No"
+                onChange={this.handleChange}
+              />
+              <Label>No</Label>
+            </FormListItem>
+          </FormList>
+        </Fieldset>
+
+        {this.state.attending === "Yes" && (
+          <div>
             <FormHeading>Starter</FormHeading>
             <Fieldset>
               <FormList inline>
@@ -46,6 +94,7 @@ class Form extends Component {
                     type="radio"
                     name="starter"
                     value="Grilled pegetable platter (vegan)"
+                    onChange={this.handleChange}
                   />
                   <Label>
                     Grilled vegetable platter <span>(vegan)</span>
@@ -56,6 +105,7 @@ class Form extends Component {
                     type="radio"
                     name="starter"
                     value="Ham hock terrine (gf)"
+                    onChange={this.handleChange}
                   />
                   <Label>
                     Ham hock terrine <span>(gf)</span>
@@ -72,6 +122,7 @@ class Form extends Component {
                     type="radio"
                     name="main"
                     value="Roast lamb with dauphinoise potatoes (gf)"
+                    onChange={this.handleChange}
                   />
                   <Label>
                     Roast lamb with dauphinoise potatoes <span>(gf)</span>
@@ -82,6 +133,7 @@ class Form extends Component {
                     type="radio"
                     name="main"
                     value="Vegetable tagine (vegan)"
+                    onChange={this.handleChange}
                   />
                   <Label>
                     Vegetable tagine <span>(vegan)</span>
@@ -98,13 +150,19 @@ class Form extends Component {
                     type="radio"
                     name="dessert"
                     value="Lemon tart (vegan)"
+                    onChange={this.handleChange}
                   />
                   <Label>
                     Lemon tart <span>(vegan)</span>
                   </Label>
                 </FormListItem>
                 <FormListItem>
-                  <Input type="radio" name="dessert" value="Brandy tart (gf)" />
+                  <Input
+                    type="radio"
+                    name="dessert"
+                    value="Brandy tart (gf)"
+                    onChange={this.handleChange}
+                  />
                   <Label>
                     Brandy tart <span>(gf)</span>
                   </Label>
@@ -113,16 +171,18 @@ class Form extends Component {
             </Fieldset>
 
             <Fieldset>
-              <Input type="text" placeholder="Any dietary requirements?" />
+              <Input
+                type="text"
+                name="dietaryRequirements"
+                placeholder="Any dietary requirements?"
+                value={this.state.dietaryRequirements}
+                onChange={this.handleChange}
+              />
             </Fieldset>
-            {/* <Text field="hello" id="hello" validate={validate} />
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button> */}
-            <Button type="submit">Submit</Button>
-          </StyledForm>
+          </div>
         )}
-      </ReactForm>
+        <Button type="submit">Submit</Button>
+      </StyledForm>
     );
   }
 }
