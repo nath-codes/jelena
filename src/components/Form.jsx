@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import styled from "styled-components";
 import Label from "./Label";
 import Input from "./Input";
@@ -7,12 +6,18 @@ import Fieldset from "./Fieldset";
 import FormHeading from "./FormHeading";
 import Button from "./Button";
 import { FormList, FormListItem } from "./FormList";
+import sendMail from "../services/send-email";
+import Text from "./Text";
+import spacer from "../mixins/spacer";
 
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   min-width: 50vw;
 
+  .message {
+    margin: ${spacer(1)} 0;
+  }
 `;
 
 class Form extends Component {
@@ -31,8 +36,7 @@ class Form extends Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-  }
-  componentDidMount() {
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -42,9 +46,34 @@ class Form extends Component {
     this.setState({ [name]: value });
   }
 
+  async handleSubmit(event) {
+    event.preventDefault();
+    this.setState({ sending: true });
+
+    const response = await sendMail(this.state);
+    this.handleResponse(response);
+  }
+
+  handleResponse(response) {
+    const { status } = response;
+
+    if (status === 200) {
+      this.setState({
+        attending: "Yes",
+        dessert: "",
+        dietaryRequirements: "",
+        fullName: "",
+        main: "",
+        sending: false,
+        sent: true,
+        starter: ""
+      });
+    }
+  }
+
   render() {
     return (
-      <StyledForm>
+      <StyledForm onSubmit={this.handleSubmit}>
         <Fieldset>
           <Input
             name="fullName"
@@ -181,7 +210,16 @@ class Form extends Component {
             </Fieldset>
           </div>
         )}
-        <Button type="submit">Submit</Button>
+
+        <Button active={this.state.sending} type="submit">
+          Submit
+        </Button>
+
+        {this.state.sent && (
+          <Text className="message" size="large">
+            Your RSVP has been recieved.
+          </Text>
+        )}
       </StyledForm>
     );
   }
