@@ -7,6 +7,7 @@ import Rsvp from "./components/Rsvp";
 import Timetable from "./components/Timetable";
 import Location from "./components/Location";
 import Gifts from "./components/Gifts";
+import Header from "./components/Header";
 import "./constants/inject-global";
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <div className="App">
+          <Header />
           <Frame position="top-left" />
           <Frame position="top-right" />
           <Frame position="bottom-left" />
