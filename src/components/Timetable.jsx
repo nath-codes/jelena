@@ -23,7 +23,7 @@ const TimetableItem = styled.li`
 `;
 
 const TimeTable = () => (
-  <Section>
+  <Section id="timetable">
     <Heading>Timetable</Heading>
     <List>
       {timetable.map(item => (

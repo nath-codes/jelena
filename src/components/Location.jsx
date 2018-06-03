@@ -11,7 +11,7 @@ const StyledLocation = Section.extend`
 `;
 
 const Location = () => (
-  <StyledLocation>
+  <StyledLocation id="location">
     <Heading>Location</Heading>
     <Map />
     <Text className="address">

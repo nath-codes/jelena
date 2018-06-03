@@ -10,7 +10,7 @@ const GiftsText = Text.extend`
 `;
 
 const Hero = () => (
-  <Section>
+  <Section id="gifts">
     <Heading>Gifts</Heading>
     <GiftsText>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima

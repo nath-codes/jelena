@@ -4,7 +4,7 @@ import Section from "./Section";
 import Form from "./Form";
 
 const Rsvp = () => (
-  <Section>
+  <Section id="rsvp">
     <Heading>RSVP</Heading>
     <Form />
   </Section>
