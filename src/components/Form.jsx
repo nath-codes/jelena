@@ -102,13 +102,15 @@ class Form extends Component {
               </Label>
             </FormListItem>
             <FormListItem>
-              <Input
-                name="attending"
-                type="radio"
-                value="No"
-                onChange={this.handleChange}
-              />
-              <Label>No</Label>
+              <Label>
+                <Input
+                  name="attending"
+                  type="radio"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+                No
+              </Label>
             </FormListItem>
           </FormList>
         </Fieldset>
@@ -119,24 +121,24 @@ class Form extends Component {
             <Fieldset>
               <FormList inline>
                 <FormListItem>
-                  <Input
-                    type="radio"
-                    name="starter"
-                    value="Grilled pegetable platter (vegan)"
-                    onChange={this.handleChange}
-                  />
                   <Label>
+                    <Input
+                      type="radio"
+                      name="starter"
+                      value="Grilled pegetable platter (vegan)"
+                      onChange={this.handleChange}
+                    />
                     Grilled vegetable platter <span>(vegan)</span>
                   </Label>
                 </FormListItem>
                 <FormListItem>
-                  <Input
-                    type="radio"
-                    name="starter"
-                    value="Ham hock terrine (gf)"
-                    onChange={this.handleChange}
-                  />
                   <Label>
+                    <Input
+                      type="radio"
+                      name="starter"
+                      value="Ham hock terrine (gf)"
+                      onChange={this.handleChange}
+                    />
                     Ham hock terrine <span>(gf)</span>
                   </Label>
                 </FormListItem>
@@ -147,24 +149,24 @@ class Form extends Component {
             <Fieldset>
               <FormList inline>
                 <FormListItem>
-                  <Input
-                    type="radio"
-                    name="main"
-                    value="Roast lamb with dauphinoise potatoes (gf)"
-                    onChange={this.handleChange}
-                  />
                   <Label>
+                    <Input
+                      type="radio"
+                      name="main"
+                      value="Roast lamb with dauphinoise potatoes (gf)"
+                      onChange={this.handleChange}
+                    />
                     Roast lamb with dauphinoise potatoes <span>(gf)</span>
                   </Label>
                 </FormListItem>
                 <FormListItem>
-                  <Input
-                    type="radio"
-                    name="main"
-                    value="Vegetable tagine (vegan)"
-                    onChange={this.handleChange}
-                  />
                   <Label>
+                    <Input
+                      type="radio"
+                      name="main"
+                      value="Vegetable tagine (vegan)"
+                      onChange={this.handleChange}
+                    />
                     Vegetable tagine <span>(vegan)</span>
                   </Label>
                 </FormListItem>
@@ -175,24 +177,24 @@ class Form extends Component {
             <Fieldset>
               <FormList inline>
                 <FormListItem>
-                  <Input
-                    type="radio"
-                    name="dessert"
-                    value="Lemon tart (vegan)"
-                    onChange={this.handleChange}
-                  />
                   <Label>
+                    <Input
+                      type="radio"
+                      name="dessert"
+                      value="Lemon tart (vegan)"
+                      onChange={this.handleChange}
+                    />
                     Lemon tart <span>(vegan)</span>
                   </Label>
                 </FormListItem>
                 <FormListItem>
-                  <Input
-                    type="radio"
-                    name="dessert"
-                    value="Brandy tart (gf)"
-                    onChange={this.handleChange}
-                  />
                   <Label>
+                    <Input
+                      type="radio"
+                      name="dessert"
+                      value="Brandy tart (gf)"
+                      onChange={this.handleChange}
+                    />
                     Brandy tart <span>(gf)</span>
                   </Label>
                 </FormListItem>

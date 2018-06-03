@@ -6,18 +6,19 @@ const textInputStyles = css`
   border-radius: 3px;
   font-family: ${props => props.theme.fonts.body};
   font-size: ${spacer(1)};
-  padding: ${spacer(0.5)};
+  height: ${spacer(2)};
+  padding: 0 ${spacer(0.5)};
   width: 100%;
 `;
 
 const StyledInput = styled.input`
   ${props => props.type === "text" && textInputStyles};
 
-  /* ${props =>
+  ${props =>
     props.type === "radio" &&
     css`
-      padding: ${spacer(1)};
-    `}; */
+      margin-right: ${spacer(0.5)};
+    `};
 `;
 
 export default StyledInput;
