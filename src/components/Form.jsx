@@ -216,9 +216,7 @@ class Form extends Component {
         </Button>
 
         {this.state.sent && (
-          <Text className="message" size="large">
-            Your RSVP has been recieved.
-          </Text>
+          <Text className="message">Your RSVP has been recieved.</Text>
         )}
       </StyledForm>
     );

@@ -14,7 +14,7 @@ const Location = () => (
   <StyledLocation>
     <Heading>Location</Heading>
     <Map />
-    <Text className="address" size="large">
+    <Text className="address">
       Kings Weston House<br />Kings Weston Lane<br />Bristol<br />BS11 0UR
     </Text>
   </StyledLocation>
