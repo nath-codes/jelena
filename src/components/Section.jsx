@@ -7,7 +7,7 @@ const StyledSection = styled.section`
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  padding-top: ${spacer(2)};
+  padding: ${spacer(2)} 0 ${spacer(3)};
   position: relative;
   width: 80%;
 `;
