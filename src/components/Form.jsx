@@ -59,7 +59,6 @@ class Form extends Component {
 
     if (status === 200) {
       this.setState({
-        attending: "Yes",
         dessert: "",
         dietaryRequirements: "",
         fullName: "",
