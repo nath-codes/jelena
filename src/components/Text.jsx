@@ -5,7 +5,7 @@ const Text = styled.div`
   align-self: center;
   font-size: ${spacer(1)};
   line-height: 1.5;
-  max-width: ${spacer(24)};
+  max-width: ${spacer(28)};
 `;
 
 export default Text;
