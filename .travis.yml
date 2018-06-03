@@ -8,6 +8,7 @@ cache:
   yarn: true
 before_deploy: yarn build
 deploy:
+  fqdn: jelena.wedding
   github_token: $GITHUB_TOKEN
   local-dir: build
   provider: pages
