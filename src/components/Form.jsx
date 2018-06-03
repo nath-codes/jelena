@@ -89,7 +89,7 @@ class Form extends Component {
         <FormHeading>Attending</FormHeading>
 
         <Fieldset>
-          <FormList>
+          <FormList inline>
             <FormListItem orphan>
               <Label>
                 <Input
@@ -119,7 +119,7 @@ class Form extends Component {
           <div>
             <FormHeading>Starter</FormHeading>
             <Fieldset>
-              <FormList inline>
+              <FormList>
                 <FormListItem>
                   <Label>
                     <Input
@@ -147,7 +147,7 @@ class Form extends Component {
 
             <FormHeading>Main</FormHeading>
             <Fieldset>
-              <FormList inline>
+              <FormList>
                 <FormListItem>
                   <Label>
                     <Input
@@ -175,7 +175,7 @@ class Form extends Component {
 
             <FormHeading>Desserts</FormHeading>
             <Fieldset>
-              <FormList inline>
+              <FormList>
                 <FormListItem>
                   <Label>
                     <Input

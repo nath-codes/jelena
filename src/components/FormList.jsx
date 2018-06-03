@@ -4,11 +4,16 @@ import List from "./List";
 
 const FormList = List.extend`
   display: flex;
+  flex-direction: column;
 
   ${props =>
     props.inline &&
     css`
-      flex-direction: column;
+      flex-direction: row;
+
+      li:nth-child(2) {
+        margin-left: ${spacer(1)};
+      }
     `};
 `;
 
@@ -16,7 +21,7 @@ const FormListItem = styled.li`
   align-items: center;
   display: flex;
   height: ${spacer(1)};
-  margin-bottom: ${spacer(0.5)};
+  margin-bottom: ${spacer(1)};
 
   &:last-child {
     margin-bottom: 0;
