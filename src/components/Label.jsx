@@ -9,6 +9,7 @@ const Label = styled.label`
 
   > span {
     font-size: 16px;
+    padding-left: 6px;
   }
 `;
 
