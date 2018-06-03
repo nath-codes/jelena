@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { hideVisually } from "polished";
 import Section from "./Section";
 import rings from "../assets/img/rings.png";
-import Arrow from "./Arrow";
 import spacer from "../mixins/spacer";
 
 const HeroText = styled.div`
@@ -24,11 +23,7 @@ const StyledH1 = styled.h1`
   ${hideVisually()};
 `;
 
-const StyledHero = Section.extend`
-  .arrow {
-    margin-bottom: ${spacer(1)};
-  }
-`;
+const StyledHero = Section.extend``;
 
 const ImageWrapper = styled.div`
   height: ${spacer(4)};
@@ -51,7 +46,6 @@ const Hero = () => (
     <ImageWrapper>
       <img src={rings} alt="" />
     </ImageWrapper>
-    <Arrow className="arrow" />
   </StyledHero>
 );
 
