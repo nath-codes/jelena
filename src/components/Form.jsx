@@ -80,7 +80,6 @@ class Form extends Component {
             placeholder="Enter your name here"
             type="text"
             required="required"
-            autoFocus="autoFocus"
             value={this.state.fullName}
             onChange={this.handleChange}
           />
