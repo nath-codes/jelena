@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { modularScale } from "polished";
 import spacer from "../mixins/spacer";
 import Heading from "./Heading";
 import Section from "./Section";
@@ -10,11 +9,12 @@ import timetable from "../constants/timetable";
 const TimetableItem = styled.li`
   align-items: center;
   display: flex;
-  font-size: ${modularScale(1, "1em", "perfectFifth")};
-  margin-bottom: ${spacer()};
+  font-size: ${spacer(1)};
+  margin-bottom: ${spacer(1)};
 
   .time {
-    margin-right: ${spacer()};
+    margin-right: ${spacer(1)};
+    white-space: nowrap;
   }
 
   .title {
