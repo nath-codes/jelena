@@ -123,6 +123,7 @@ class Form extends Component {
                     <Input
                       type="radio"
                       name="starter"
+                      required="required"
                       value="Grilled pegetable platter (vegan)"
                       onChange={this.handleChange}
                     />
@@ -151,6 +152,7 @@ class Form extends Component {
                     <Input
                       type="radio"
                       name="main"
+                      required="required"
                       value="Roast lamb with dauphinoise potatoes (gf)"
                       onChange={this.handleChange}
                     />
@@ -179,6 +181,7 @@ class Form extends Component {
                     <Input
                       type="radio"
                       name="dessert"
+                      required="required"
                       value="Lemon tart (vegan)"
                       onChange={this.handleChange}
                     />
