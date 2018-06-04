@@ -18,7 +18,7 @@ const Hero = () => (
       corrupti laborum assumenda, dolorum impedit exercitationem nesciunt atque
       vel!
     </GiftsText>
-    <ButtonLink href="https://amazon.co.uk">Ipsum</ButtonLink>
+    <ButtonLink href="https://amazon.co.uk">Contribute</ButtonLink>
   </Section>
 );
 
