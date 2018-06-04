@@ -15,11 +15,6 @@ const Button = styled.button`
   position: relative;
   transition: all ${props => props.theme.transition.duration};
 
-  &:hover {
-    background: ${props => props.theme.colors.black};
-    color: ${props => props.theme.colors.white};
-  }
-
   ${props =>
     props.active &&
     css`
