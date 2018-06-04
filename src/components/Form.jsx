@@ -125,6 +125,10 @@ class Form extends Component {
                       name="starter"
                       required="required"
                       value="Grilled pegetable platter (vegan)"
+                      checked={
+                        this.state.starter ===
+                        "Grilled pegetable platter (vegan)"
+                      }
                       onChange={this.handleChange}
                     />
                     Grilled vegetable platter <span>(vegan)</span>
@@ -136,6 +140,7 @@ class Form extends Component {
                       type="radio"
                       name="starter"
                       value="Ham hock terrine (gf)"
+                      checked={this.state.starter === "Ham hock terrine (gf)"}
                       onChange={this.handleChange}
                     />
                     Ham hock terrine <span>(gf)</span>
@@ -154,6 +159,10 @@ class Form extends Component {
                       name="main"
                       required="required"
                       value="Roast lamb with dauphinoise potatoes (gf)"
+                      checked={
+                        this.state.main ===
+                        "Roast lamb with dauphinoise potatoes (gf)"
+                      }
                       onChange={this.handleChange}
                     />
                     Roast lamb with dauphinoise potatoes <span>(gf)</span>
@@ -165,6 +174,7 @@ class Form extends Component {
                       type="radio"
                       name="main"
                       value="Vegetable tagine (vegan)"
+                      checked={this.state.main === "Vegetable tagine (vegan)"}
                       onChange={this.handleChange}
                     />
                     Vegetable tagine <span>(vegan)</span>
@@ -183,6 +193,7 @@ class Form extends Component {
                       name="dessert"
                       required="required"
                       value="Lemon tart (vegan)"
+                      checked={this.state.dessert === "Lemon tart (vegan)"}
                       onChange={this.handleChange}
                     />
                     Lemon tart <span>(vegan)</span>
@@ -194,6 +205,7 @@ class Form extends Component {
                       type="radio"
                       name="dessert"
                       value="Brandy tart (gf)"
+                      checked={this.state.dessert === "Brandy tart (gf)"}
                       onChange={this.handleChange}
                     />
                     Brandy tart <span>(gf)</span>
