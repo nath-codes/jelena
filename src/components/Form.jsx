@@ -13,7 +13,8 @@ import spacer from "../mixins/spacer";
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  min-width: 50vw;
+  max-width: ${props => spacer(20, props.theme.breakpoint)};
+  width: 100%;
 
   .message {
     margin: ${props => spacer(1, props.theme.breakpoint)} 0;
