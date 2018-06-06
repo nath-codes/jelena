@@ -8,6 +8,9 @@ import Timetable from "./components/Timetable";
 import Location from "./components/Location";
 import Gifts from "./components/Gifts";
 import Header from "./components/Header";
+import debounce from "lodash/debounce";
+import { medium, large } from "./constants/breakpoints";
+
 import "./constants/inject-global";
 
 class App extends Component {
@@ -18,7 +21,24 @@ class App extends Component {
       breakpoint: "small",
       ...theme
     };
+
+    this.setBreakpoint = this.setBreakpoint.bind(this);
   }
+
+  componentDidMount() {
+    window.addEventListener("resize", debounce(this.setBreakpoint, 150));
+  }
+
+  setBreakpoint() {
+    if (window.matchMedia(`(min-width: ${large})`).matches) {
+      this.setState({ breakpoint: "large" });
+    } else if (window.matchMedia(`(min-width: ${medium})`).matches) {
+      this.setState({ breakpoint: "medium" });
+    } else {
+      this.setState({ breakpoint: "small" });
+    }
+  }
+
   render() {
     return (
       <ThemeProvider theme={this.state}>
