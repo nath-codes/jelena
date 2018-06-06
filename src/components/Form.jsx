@@ -16,7 +16,7 @@ const StyledForm = styled.form`
   min-width: 50vw;
 
   .message {
-    margin: ${spacer(1)} 0;
+    margin: ${props => spacer(1, props.theme.breakpoint)} 0;
   }
 `;
 

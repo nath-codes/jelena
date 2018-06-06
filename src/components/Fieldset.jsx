@@ -7,7 +7,7 @@ const Fieldset = styled.div`
   border: none;
   display: flex;
   height: auto;
-  margin: 0 0 ${spacer(2)};
+  margin: 0 0 ${props => spacer(2, props.theme.background)};
   padding: 0;
 `;
 

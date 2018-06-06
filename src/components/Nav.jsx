@@ -5,8 +5,8 @@ import spacer from "../mixins/spacer";
 const StyledNavItem = styled.a`
   color: ${props => props.theme.colors.delftBlue};
   font-family: ${props => props.theme.fonts.heading};
-  font-size: ${spacer(1)};
-  margin-right: ${spacer(1)};
+  font-size: ${props => spacer(1, props.theme.breakpoint)};
+  margin-right: ${props => spacer(1, props.theme.breakpoint)};
   position: relative;
   text-decoration: none;
 

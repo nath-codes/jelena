@@ -8,10 +8,13 @@ import spacer from "../mixins/spacer";
 const HeroText = styled.div`
   color: ${props => props.theme.colors.delftBlue};
   font-family: ${props => props.theme.fonts.heading};
-  font-size: ${props => (props.size === "large" ? spacer(3) : spacer(2))};
+  font-size: ${props =>
+    props.size === "large"
+      ? spacer(3, props.theme.breakpoint)
+      : spacer(2, props.theme.breakpoint)};
   font-weight: 400;
-  line-height: ${props => (props.size === "large" ? 1 : 1)};
-  margin-bottom: ${spacer(1)};
+  line-height: 1;
+  margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
   text-align: center;
 
   &:last-child {
@@ -26,8 +29,8 @@ const StyledH1 = styled.h1`
 const StyledHero = Section.extend``;
 
 const ImageWrapper = styled.div`
-  height: ${spacer(4)};
-  margin-bottom: ${spacer(1)};
+  height: ${props => spacer(4, props.theme.breakpoint)};
+  margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
 `;
 
 const Hero = () => (

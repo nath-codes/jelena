@@ -6,7 +6,7 @@ import spacer from "../mixins/spacer";
 const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
-  margin: ${spacer(1)} 0 0;
+  margin: ${props => spacer(1, props.breakpoint)} 0 0;
 `;
 
 const Header = () => (

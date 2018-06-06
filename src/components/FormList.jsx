@@ -12,7 +12,7 @@ const FormList = List.extend`
       flex-direction: row;
 
       li:nth-child(2) {
-        margin-left: ${spacer(1)};
+        margin-left: ${props => spacer(1, props.theme.breakpoint)};
       }
     `};
 `;
@@ -20,8 +20,8 @@ const FormList = List.extend`
 const FormListItem = styled.li`
   align-items: center;
   display: flex;
-  height: ${spacer(1)};
-  margin-bottom: ${spacer(1)};
+  height: ${props => spacer(1, props.theme.breakpoint)};
+  margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
 
   &:last-child {
     margin-bottom: 0;

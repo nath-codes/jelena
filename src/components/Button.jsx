@@ -9,26 +9,30 @@ const Button = styled.button`
   color: ${props => props.theme.colors.white};
   cursor: pointer;
   font-family: ${props => props.theme.fonts.heading};
-  font-size: ${spacer(1)};
+  font-size: ${props => spacer(1, props.theme.breakpoint)};
   line-height: 1;
-  padding: ${spacer(0.5)} ${spacer(2)};
+  padding-bottom: ${props => spacer(0.5, props.theme.breakpoint)};
+  padding-top: ${props => spacer(0.5, props.theme.breakpoint)};
+  padding-left: ${props => spacer(2, props.theme.breakpoint)};
+  padding-right: ${props => spacer(2, props.theme.breakpoint)};
   position: relative;
   transition: all ${props => props.theme.transition.duration};
 
   ${props =>
     props.active &&
     css`
-      padding-right: ${spacer(3)};
+      padding-right: ${props => spacer(3, props.theme.breakpoint)};
 
       &:after {
         background-image: url(${spinner});
-        background-size: ${spacer(1)} ${spacer(1)};
+        background-size: ${props => spacer(1, props.theme.breakpoint)}
+          ${props => spacer(1, props.theme.breakpoint)};
         content: " ";
-        height: ${spacer(1)};
+        height: ${props => spacer(1, props.theme.breakpoint)};
         position: absolute;
-        right: ${spacer(1)};
-        top: ${spacer(0.5)};
-        width: ${spacer(1)};
+        right: ${props => spacer(1, props.theme.breakpoint)};
+        top: ${props => spacer(0.5, props.theme.breakpoint)};
+        width: ${props => spacer(1, props.theme.breakpoint)};
       }
     `};
 `;

@@ -6,8 +6,8 @@ const placeId = "ChIJW9LhQoWScUgRpUZbE5MC6tY";
 const StyledIframe = styled.iframe`
   border: 0;
   filter: grayscale(1);
-  height: ${spacer(12)};
-  margin-bottom: ${spacer(2)};
+  height: ${props => spacer(12, props.theme.breakpoint)};
+  margin-bottom: ${props => spacer(2, props.theme.breakpoint)};
   width: 100%;
 `;
 

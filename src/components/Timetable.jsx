@@ -9,11 +9,11 @@ import timetable from "../constants/timetable";
 const TimetableItem = styled.li`
   align-items: center;
   display: flex;
-  font-size: ${spacer(1)};
-  margin-bottom: ${spacer(1)};
+  font-size: ${props => spacer(1, props.theme.breakpoint)};
+  margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
 
   .time {
-    margin-right: ${spacer(1)};
+    margin-right: ${props => spacer(1, props.theme.breakpoint)};
     white-space: nowrap;
   }
 

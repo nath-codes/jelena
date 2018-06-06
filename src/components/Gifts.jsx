@@ -6,7 +6,7 @@ import ButtonLink from "./ButtonLink";
 import spacer from "../mixins/spacer";
 
 const GiftsText = Text.extend`
-  margin-bottom: ${spacer(2)};
+  margin-bottom: ${props => spacer(2, props.breakpoint)};
 `;
 
 const Hero = () => (

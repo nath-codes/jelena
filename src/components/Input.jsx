@@ -5,9 +5,9 @@ const textInputStyles = css`
   border: solid 3px ${props => props.theme.colors.delftBlue};
   border-radius: 3px;
   font-family: ${props => props.theme.fonts.body};
-  font-size: ${spacer(1)};
-  height: ${spacer(2)};
-  padding: 0 ${spacer(0.5)};
+  font-size: ${props => spacer(1, props.theme.breakpoint)};
+  height: ${props => spacer(2, props.theme.breakpoint)};
+  padding: 0 ${props => spacer(0.5, props.theme.breakpoint)};
   width: 100%;
 `;
 
@@ -17,7 +17,7 @@ const StyledInput = styled.input`
   ${props =>
     props.type === "radio" &&
     css`
-      margin-right: ${spacer(0.5)};
+      margin-right: ${props => spacer(0.5, props.theme.breakpoint)};
     `};
 `;
 

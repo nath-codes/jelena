@@ -7,7 +7,8 @@ const StyledSection = styled.section`
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  padding: ${spacer(2)} 0 ${spacer(3)};
+  padding: ${props => spacer(2, props.theme.breakpoint)} 0
+    ${props => spacer(3, props.theme.breakpoint)};
   position: relative;
   width: 80%;
 `;
