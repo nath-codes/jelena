@@ -25,7 +25,7 @@ class Form extends Component {
     super(props);
 
     this.state = {
-      attending: "Yes",
+      attending: "No",
       dessert: "",
       dietaryRequirements: "",
       fullName: "",
@@ -95,7 +95,6 @@ class Form extends Component {
                   type="radio"
                   value="Yes"
                   onChange={this.handleChange}
-                  defaultChecked
                 />Yes
               </Label>
             </FormListItem>
