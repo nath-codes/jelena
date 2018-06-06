@@ -5,6 +5,7 @@ import List from "./List";
 const FormList = List.extend`
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   ${props =>
     props.inline &&
