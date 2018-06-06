@@ -11,9 +11,17 @@ import Header from "./components/Header";
 import "./constants/inject-global";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      breakpoint: "small",
+      ...theme
+    };
+  }
   render() {
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={this.state}>
         <div className="App">
           <Header />
           <Frame position="top-left" />
