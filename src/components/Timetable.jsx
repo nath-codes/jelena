@@ -5,20 +5,40 @@ import Heading from "./Heading";
 import Section from "./Section";
 import List from "./List";
 import timetable from "../constants/timetable";
+import { medium } from "../constants/breakpoints";
 
 const TimetableItem = styled.li`
   align-items: center;
   display: flex;
+  flex-direction: column;
   font-size: ${props => spacer(1, props.theme.breakpoint)};
-  margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
+  margin-bottom: ${props => spacer(1.5, props.theme.breakpoint)};
 
   .time {
-    margin-right: ${props => spacer(1, props.theme.breakpoint)};
+    margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
     white-space: nowrap;
   }
 
   .title {
-    text-align: left;
+    text-align: center;
+  }
+
+  @media (min-width: ${medium}) {
+    flex-direction: row;
+    margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
+
+    .time {
+      margin: 0 ${props => spacer(1, props.theme.breakpoint)} 0 0;
+      white-space: nowrap;
+    }
+
+    .title {
+      text-align: left;
+    }
+
+    .title {
+      text-align: left;
+    }
   }
 `;
 
