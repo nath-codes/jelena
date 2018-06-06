@@ -2,12 +2,12 @@ import { rem } from "polished";
 
 const getLineHeight = breakpoint => {
   switch (breakpoint) {
-    case "small":
-      return 1.3;
+    case "large":
+      return 1.5;
     case "medium":
       return 1.4;
     default:
-      return 1.5;
+      return 1.3;
   }
 };
 
