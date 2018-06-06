@@ -6,8 +6,11 @@ const getLineHeight = breakpoint => {
       return 1.5;
     case "medium":
       return 1.4;
-    default:
+    case "small":
       return 1.3;
+    case "extra-small":
+    default:
+      return 1.2;
   }
 };
 

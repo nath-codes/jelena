@@ -1,5 +1,5 @@
-const small = "768px";
-const medium = "992px";
-const large = "1200px";
+const small = "576px";
+const medium = "768px";
+const large = "992px";
 
 export { small, medium, large };

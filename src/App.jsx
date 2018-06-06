@@ -9,7 +9,7 @@ import Location from "./components/Location";
 import Gifts from "./components/Gifts";
 import Header from "./components/Header";
 import debounce from "lodash/debounce";
-import { medium, large } from "./constants/breakpoints";
+import { small, medium, large } from "./constants/breakpoints";
 
 import "./constants/inject-global";
 
@@ -34,8 +34,10 @@ class App extends Component {
       this.setState({ breakpoint: "large" });
     } else if (window.matchMedia(`(min-width: ${medium})`).matches) {
       this.setState({ breakpoint: "medium" });
-    } else {
+    } else if (window.matchMedia(`(min-width: ${small})`).matches) {
       this.setState({ breakpoint: "small" });
+    } else {
+      this.setState({ breakpoint: "extra-small" });
     }
   }
 
