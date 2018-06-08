@@ -10,44 +10,45 @@ import tileLarge2x from "../assets/img/tile/tile-l@2x.png";
 import { small, medium, large } from "../constants/breakpoints";
 
 const StyledFrame = styled.div`
+  background-image: url(${tileExtraSmall});
+  background-repeat: no-repeat;
   background-size: contain;
-  background: url(${tileExtraSmall}) no-repeat;
   height: 125px;
   position: fixed;
   width: 125px;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-    background: url(${tileExtraSmall2x}) no-repeat;
+  @media (-webkit-min-device-pixel-ratio: 2){
+    background-image: url(${tileExtraSmall2x});
   }
 
   @media(min-width: ${small}) {
-    background: url(${tileSmall}) no-repeat;
+    background-image: url(${tileSmall});
     height: 150px;
     width: 150px;
   }
 
-  @media(min-width: ${small}) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-    background: url(${tileSmall2x}) no-repeat;
+  @media(min-width: ${small}) and (-webkit-min-device-pixel-ratio: 2){
+    background-image: url(${tileSmall2x});
   }
 
   @media(min-width: ${medium}) {
-    background: url(${tileMedium}) no-repeat;
+    background-image: url(${tileMedium});
     height: 200px;
     width: 200px;
   }
 
-  @media(min-width: ${medium}) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-    background: url(${tileMedium2x}) no-repeat;
+  @media(min-width: ${medium}) and (-webkit-min-device-pixel-ratio: 2){
+    background-image: url(${tileMedium2x});
   }
 
   @media(min-width: ${large}) {
-    background: url(${tileLarge}) no-repeat;
+    background-image: url(${tileLarge});
     height: 250px;
     width: 250px;
   }
 
-  @media(min-width: ${large}) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-    background: url(${tileLarge2x}) no-repeat;
+  @media(min-width: ${large}) and (-webkit-min-device-pixel-ratio: 2){
+    background-image: url(${tileLarge2x});
   }
 
   ${props =>
