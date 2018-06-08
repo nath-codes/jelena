@@ -27,6 +27,7 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener("resize", debounce(this.setBreakpoint, 150));
+    this.setBreakpoint();
   }
 
   setBreakpoint() {
