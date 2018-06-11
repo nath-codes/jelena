@@ -1,36 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "./Link";
 import spacer from "../mixins/spacer";
 
-const StyledNavItem = styled.a`
-  color: ${props => props.theme.colors.delftBlue};
+const StyledNavItem = Link.extend`
   font-family: ${props => props.theme.fonts.heading};
   font-size: ${props => spacer(1, props.theme.breakpoint)};
   margin-right: ${props => spacer(1, props.theme.breakpoint)};
-  position: relative;
-  text-decoration: none;
 
   &:last-child {
     margin-right: 0;
-  }
-
-  &::before {
-    background-color: ${props => props.theme.colors.white};
-    bottom: -3px;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
-  }
-
-  &:hover {
-    ::before {
-      background-color: ${props => props.theme.colors.delftBlue};
-      transform: scaleX(1);
-    }
   }
 `;
 
