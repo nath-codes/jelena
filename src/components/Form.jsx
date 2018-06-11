@@ -124,10 +124,10 @@ class Form extends Component {
                       type="radio"
                       name="starter"
                       required="required"
-                      value="Grilled pegetable platter (vegan)"
+                      value="Grilled vegetable platter (vegan)"
                       checked={
                         this.state.starter ===
-                        "Grilled pegetable platter (vegan)"
+                        "Grilled vegetable platter (vegan)"
                       }
                       onChange={this.handleChange}
                     />
