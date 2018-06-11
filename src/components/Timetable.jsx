@@ -12,15 +12,13 @@ const TimetableItem = styled.li`
   display: flex;
   flex-direction: column;
   font-size: ${props => spacer(1, props.theme.breakpoint)};
-  margin-bottom: ${props => spacer(1.5, props.theme.breakpoint)};
+  margin-bottom: ${props => spacer(2, props.theme.breakpoint)};
+  text-align: center;
 
   .time {
     margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
+    min-width: ${props => spacer(5, props.theme.breakpoint)};
     white-space: nowrap;
-  }
-
-  .title {
-    text-align: center;
   }
 
   @media (min-width: ${medium}) {
@@ -30,10 +28,6 @@ const TimetableItem = styled.li`
     .time {
       margin: 0 ${props => spacer(1, props.theme.breakpoint)} 0 0;
       white-space: nowrap;
-    }
-
-    .title {
-      text-align: left;
     }
 
     .title {
