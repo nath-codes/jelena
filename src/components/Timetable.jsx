@@ -15,6 +15,10 @@ const TimetableItem = styled.li`
   margin-bottom: ${props => spacer(2, props.theme.breakpoint)};
   text-align: center;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   .time {
     margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
     min-width: ${props => spacer(5, props.theme.breakpoint)};
