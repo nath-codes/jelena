@@ -192,11 +192,11 @@ class Form extends Component {
                       type="radio"
                       name="dessert"
                       required="required"
-                      value="Lemon tart (vegan)"
-                      checked={this.state.dessert === "Lemon tart (vegan)"}
+                      value="Lemon tart"
+                      checked={this.state.dessert === "Lemon tart"}
                       onChange={this.handleChange}
                     />
-                    Lemon tart <span>(vegan)</span>
+                    Lemon tart
                   </Label>
                 </FormListItem>
                 <FormListItem>
@@ -204,11 +204,13 @@ class Form extends Component {
                     <Input
                       type="radio"
                       name="dessert"
-                      value="Brandy tart (gf)"
-                      checked={this.state.dessert === "Brandy tart (gf)"}
+                      value="Brandy tart (gf) (vegan)"
+                      checked={
+                        this.state.dessert === "Brandy tart (gf) (vegan)"
+                      }
                       onChange={this.handleChange}
                     />
-                    Brandy tart <span>(gf)</span>
+                    Brandy tart <span>(gf) (vegan)</span>
                   </Label>
                 </FormListItem>
               </FormList>
