@@ -3,21 +3,28 @@ import Heading from "./Heading";
 import Section from "./Section";
 import Map from "./Map";
 import Text from "./Text";
-
-const StyledLocation = Section.extend`
-  .address {
-    text-align: center;
-  }
-`;
+import Paragraph from "./Paragraph";
+import Link from "./Link";
 
 const Location = () => (
-  <StyledLocation id="location">
+  <Section id="location">
     <Heading>Location</Heading>
     <Map />
-    <Text className="address">
-      Kings Weston House<br />Kings Weston Lane<br />Bristol<br />BS11 0UR
+    <Text>
+      <Paragraph>
+        <Link href="http://kingswestonhouse.co.uk/">Kings Weston House</Link> is
+        approximately fifteen minutes' drive from central Bristol, Temple Meads
+        train station and near to Blaise Castle Estate. There is a free car park
+        in the house grounds. If you need a taxi from the centre, we would
+        recommend calling V Cars on{" "}
+        <Link href="tel:0117 9252626">0117 9252626</Link> or using Uber.
+      </Paragraph>
+      <Paragraph>
+        If you need to spend the night in Bristol before or after the wedding
+        then please ask us for our recommended places to stay.
+      </Paragraph>
     </Text>
-  </StyledLocation>
+  </Section>
 );
 
 export default Location;
