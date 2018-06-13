@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import spacer from "../mixins/spacer";
-import { small } from "../constants/breakpoints";
+import { small, medium } from "../constants/breakpoints";
 
 const Label = styled.label`
   align-items: center;
@@ -10,12 +10,16 @@ const Label = styled.label`
   width: 100%;
 
   > span {
-    font-size: 16px;
+    font-size: 12px;
     margin-left: auto;
     padding-left: 6px;
 
     @media (min-width: ${small}) {
       margin-left: 0;
+    }
+
+    @media (min-width: ${medium}) {
+      font-size: 14px;
     }
   }
 `;
