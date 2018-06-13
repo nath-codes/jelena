@@ -6,7 +6,7 @@ const Label = styled.label`
   align-items: center;
   display: flex;
   font-family: ${props => props.theme.fonts.body};
-  font-size: ${props => spacer(1, props.theme.breakpoint)};
+  font-size: ${props => spacer(0.75, props.theme.breakpoint)};
   width: 100%;
 
   > span {

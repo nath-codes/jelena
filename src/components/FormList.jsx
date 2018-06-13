@@ -22,7 +22,7 @@ const FormListItem = styled.li`
   align-items: center;
   display: flex;
   height: ${props => spacer(1, props.theme.breakpoint)};
-  margin-bottom: ${props => spacer(1, props.theme.breakpoint)};
+  margin-bottom: ${props => spacer(0.5, props.theme.breakpoint)};
 
   &:last-child {
     margin-bottom: 0;
