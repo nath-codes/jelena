@@ -9,7 +9,7 @@ import { medium } from "../constants/breakpoints";
 
 const TimetableList = List.extend`
   @media (min-width: ${medium}) {
-    margin-left: ${props => spacer(7.5, props.theme.breakpoint)};
+    margin-left: ${props => spacer(6.5, props.theme.breakpoint)};
   }
 `;
 
