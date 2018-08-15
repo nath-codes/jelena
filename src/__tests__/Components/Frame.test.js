@@ -2,15 +2,15 @@ import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
 import { ThemeProvider } from "styled-components";
-import Header from "../components/Header";
-import theme from "../constants/theme";
+import Frame from "../../components/Frame";
+import theme from "../../constants/theme";
 
-describe("<Header />", () => {
+describe("<Frame />", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(
         <ThemeProvider theme={theme}>
-          <Header />
+          <Frame />
         </ThemeProvider>
       )
       .toJSON();

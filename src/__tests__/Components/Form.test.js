@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Form from "../components/Form";
+import Form from "../../components/Form";
 
 describe.skip("<Form />", () => {
   describe("updating state", () => {

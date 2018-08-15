@@ -1,8 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
-import Map from "../components/Map";
-import theme from "../constants/theme";
+import Map from "../../components/Map";
+import theme from "../../constants/theme";
 
 describe("<Map />", () => {
   it("renders correctly", () => {

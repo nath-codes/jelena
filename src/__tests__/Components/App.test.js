@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { shallow } from "enzyme";
-import App from "../App";
-import { small, medium, large } from "../constants/breakpoints";
+import App from "../../App";
+import { small, medium, large } from "../../constants/breakpoints";
 
 const matchMediaMock = () => {
   return {
