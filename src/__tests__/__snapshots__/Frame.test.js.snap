@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Frame /> renders correctly 1`] = `
+.c0 {
+  background-image: url(tile-xs.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 125px;
+  position: fixed;
+  width: 125px;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c0 {
+    background-image: url(tile-xs@2x.png);
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    background-image: url(tile-s.png);
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (min-width:576px) and (-webkit-min-device-pixel-ratio:2) {
+  .c0 {
+    background-image: url(tile-s@2x.png);
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    background-image: url(tile-m.png);
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (min-width:768px) and (-webkit-min-device-pixel-ratio:2) {
+  .c0 {
+    background-image: url(tile-m@2x.png);
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    background-image: url(tile-l.png);
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width:992px) and (-webkit-min-device-pixel-ratio:2) {
+  .c0 {
+    background-image: url(tile-l@2x.png);
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
