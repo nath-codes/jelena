@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Gifts /> renders correctly 1`] = `
+.c1 {
+  color: #1b56c5;
+  font-family: bebas-neue;
+  font-size: 3.5999999999999996rem;
+  font-weight: 400;
+  line-height: 3.5999999999999996rem;
+  margin: 0 0 2.4rem;
+  text-align: center;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2.4rem 0;
+  position: relative;
+  width: 80%;
+}
+
+.c5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background: #1b56c5;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: bebas-neue;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c4 {
+  color: #1b56c5;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4::before {
+  background-color: #fff;
+  bottom: -3px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  width: 100%;
+}
+
+.c4:hover::before {
+  background-color: #1b56c5;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c3 {
+  margin: 0 0 1.2rem;
+}
+
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 0.8999999999999999rem;
+  line-height: 1.3;
+  max-width: 33.6rem;
+  margin-bottom: 2.4rem;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    line-height: 1.4;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    line-height: 1.5;
+  }
+}
+
+<section
+  className="c0"
+  id="gifts"
+>
+  <h2
+    className="c1"
+  >
+    Gifts
+  </h2>
+  <div
+    className="c2"
+  >
+    <p
+      className="c3"
+    >
+      Simply by being at our wedding, you will be getting us a wonderful gift – most of all, we want to spend the day with everyone we love and for you to celebrate with us.
+    </p>
+    <p
+      className="c3"
+    >
+      Should you want to give us anything extra, however, we will be going to the beautiful archipelago of the Azores on our honeymoon and would really appreciate any contribution to help us on our adventures.
+    </p>
+    <p
+      className="c3"
+    >
+      If you would like to make a gift to our honeymoon fund you can do so via PayPal using the button below or by calling our travel agent, Azores Choice, on 
+      <a
+        className="c4"
+        href="tel:01768 721020"
+      >
+        01768 721020
+      </a>
+    </p>
+  </div>
+  <a
+    className="c5"
+    href="https://www.paypal.com/pools/c/858WNidwXt"
+  >
+    Contribute
+  </a>
+</section>
+`;
