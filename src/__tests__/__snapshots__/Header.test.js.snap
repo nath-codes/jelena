@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+.c1 {
+  color: #1b56c5;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: bebas-neue;
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.c1::before {
+  background-color: #fff;
+  bottom: -3px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  width: 100%;
+}
+
+.c1:hover::before {
+  background-color: #1b56c5;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 2.4rem 0 0;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    margin-top: 1.2rem 0 0;
+  }
+}
+
+<header
+  className="c0"
+>
+  <nav
+    className=""
+  >
+    <a
+      className="c1"
+      href="#rsvp"
+    >
+      RSVP
+    </a>
+    <a
+      className="c1"
+      href="#location"
+    >
+      Location
+    </a>
+    <a
+      className="c1"
+      href="#timetable"
+    >
+      Timetable
+    </a>
+    <a
+      className="c1"
+      href="#gifts"
+    >
+      Gifts
+    </a>
+  </nav>
+</header>
+`;
