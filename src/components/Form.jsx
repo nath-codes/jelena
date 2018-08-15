@@ -47,11 +47,13 @@ class Form extends Component {
     this.setState({ [name]: value });
   }
 
-  async handleSubmit(event) {
+  handleSubmit(event) {
+    console.log(event);
+
     event.preventDefault();
     this.setState({ sending: true });
 
-    const response = await sendMail(this.state);
+    const response = {};
     this.handleResponse(response);
   }
 
@@ -96,7 +98,8 @@ class Form extends Component {
                   type="radio"
                   value="Yes"
                   onChange={this.handleChange}
-                />Yes
+                />
+                Yes
               </Label>
             </FormListItem>
             <FormListItem>
