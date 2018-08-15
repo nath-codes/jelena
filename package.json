@@ -22,8 +22,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test-coverage": "react-scripts test --env=jsdom --coverage",
     "test-dev": "react-scripts test --env=jsdom --watch --coverage",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!src/{index,registerServiceWorker}.js"
+    ]
   }
 }
