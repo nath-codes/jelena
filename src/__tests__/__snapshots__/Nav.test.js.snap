@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> renders correctly 1`] = `
+.c0 {
+  color: #1b56c5;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: bebas-neue;
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.c0::before {
+  background-color: #fff;
+  bottom: -3px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  width: 100%;
+}
+
+.c0:hover::before {
+  background-color: #1b56c5;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c0:last-child {
+  margin-right: 0;
+}
+
+<nav
+  className=""
+>
+  <a
+    className="c0"
+    href="#rsvp"
+  >
+    RSVP
+  </a>
+  <a
+    className="c0"
+    href="#location"
+  >
+    Location
+  </a>
+  <a
+    className="c0"
+    href="#timetable"
+  >
+    Timetable
+  </a>
+  <a
+    className="c0"
+    href="#gifts"
+  >
+    Gifts
+  </a>
+</nav>
+`;
