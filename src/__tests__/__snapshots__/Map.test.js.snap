@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Map /> renders active state 1`] = `
+.c0 {
+  border: 0;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  height: 14.399999999999999rem;
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+
+<iframe
+  className="c0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0eUK8JOPmTAbb7mmk-Q59ioYz6VfvKlg&q=place_id:ChIJW9LhQoWScUgRpUZbE5MC6tY"
+/>
+`;
+
+exports[`<Map /> renders correctly 1`] = `
+.c0 {
+  border: 0;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  height: 14.399999999999999rem;
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+
+<iframe
+  className="c0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0eUK8JOPmTAbb7mmk-Q59ioYz6VfvKlg&q=place_id:ChIJW9LhQoWScUgRpUZbE5MC6tY"
+/>
+`;
