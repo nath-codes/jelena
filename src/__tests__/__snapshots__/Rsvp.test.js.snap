@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Rsvp /> renders correctly 1`] = `
+.c1 {
+  color: #1b56c5;
+  font-family: bebas-neue;
+  font-size: 3.5999999999999996rem;
+  font-weight: 400;
+  line-height: 3.5999999999999996rem;
+  margin: 0 0 2.4rem;
+  text-align: center;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2.4rem 0;
+  position: relative;
+  width: 80%;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: montserrat;
+  font-size: 0.8999999999999999rem;
+  width: 100%;
+}
+
+.c8 > span {
+  font-size: 12px;
+  margin-left: auto;
+  padding-left: 6px;
+}
+
+.c4 {
+  border: solid 3px #1b56c5;
+  border-radius: 3px;
+  font-family: montserrat;
+  font-size: 0.8999999999999999rem;
+  height: 2.4rem;
+  padding: 0 0 0 0.6rem;
+  width: 100%;
+}
+
+.c9 {
+  margin-right: 0.6rem;
+}
+
+.c3 {
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  margin: 0 0 2.4rem;
+  padding: 0;
+}
+
+.c3 [object Object]::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.c5 {
+  color: #1b56c5;
+  font-family: bebas-neue;
+  font-size: 1.7999999999999998rem;
+  line-height: 2.4rem;
+  margin: 0 0 1.2rem;
+}
+
+.c11 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background: #1b56c5;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: bebas-neue;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c6 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c6 li:nth-child(2) {
+  margin-left: 1.2rem;
+}
+
+.c7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.2rem;
+  margin-bottom: 0.6rem;
+  margin-bottom: 0;
+}
+
+.c7:last-child {
+  margin-bottom: 0;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.c10:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 28.799999999999997rem;
+  width: 100%;
+}
+
+.c2 .message {
+  margin: 1.2rem 0;
+}
+
+@media (min-width:576px) {
+  .c8 > span {
+    margin-left: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 > span {
+    font-size: 14px;
+  }
+}
+
+<section
+  className="c0"
+  id="rsvp"
+>
+  <h2
+    className="c1"
+  >
+    RSVP
+  </h2>
+  <form
+    className="c2"
+    onSubmit={[Function]}
+  >
+    <div
+      className="c3"
+    >
+      <input
+        className="c4"
+        name="fullName"
+        onChange={[Function]}
+        placeholder="Enter your name here"
+        required="required"
+        type="text"
+        value=""
+      />
+    </div>
+    <h3
+      className="c5"
+    >
+      Attending
+    </h3>
+    <div
+      className="c3"
+    >
+      <ul
+        className="c6"
+      >
+        <li
+          className="c7"
+        >
+          <label
+            className="c8"
+          >
+            <input
+              className="c9"
+              name="attending"
+              onChange={[Function]}
+              type="radio"
+              value="Yes"
+            />
+            Yes
+          </label>
+        </li>
+        <li
+          className="c10"
+        >
+          <label
+            className="c8"
+          >
+            <input
+              className="c9"
+              name="attending"
+              onChange={[Function]}
+              type="radio"
+              value="No"
+            />
+            No
+          </label>
+        </li>
+      </ul>
+    </div>
+    <button
+      className="c11"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</section>
+`;
