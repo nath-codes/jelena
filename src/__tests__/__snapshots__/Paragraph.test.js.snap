@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paragraph /> renders correctly 1`] = `
+.c0 {
+  margin: 0 0 1.2rem;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+<p
+  className="c0"
+/>
+`;
