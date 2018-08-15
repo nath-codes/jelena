@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders active state 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background: #1b56c5;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: bebas-neue;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding-right: 3.5999999999999996rem;
+}
+
+.c0:after {
+  background-image: url(spinner.svg);
+  background-size: 1.2rem 1.2rem;
+  content: " ";
+  height: 1.2rem;
+  position: absolute;
+  right: 1.2rem;
+  top: 0.6rem;
+  width: 1.2rem;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`<Button /> renders correctly 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background: #1b56c5;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: bebas-neue;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+<button
+  className="c0"
+/>
+`;
