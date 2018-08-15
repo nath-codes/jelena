@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Location from "../components/Location";
 import theme from "../constants/theme";
 
-describe.only("<Location />", () => {
+describe("<Location />", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(
