@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
+import "jest-styled-components";
 import App from "../../App";
-import { small, medium, large } from "../../constants/breakpoints";
 
 const matchMediaMock = () => {
   return {
@@ -14,21 +13,9 @@ const matchMediaMock = () => {
 
 window.matchMedia = window.matchMedia || matchMediaMock;
 
-describe.skip("<App />", () => {
-  it("renders without crashing", () => {
-    const div = document.createElement("div");
-    ReactDOM.render(<App />, div);
-    ReactDOM.unmountComponentAtNode(div);
+describe("<App />", () => {
+  it("renders correctly", () => {
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
-  //   it.only("should set 'extra-small' breakpoint by default", () => {
-  //     window.matchMedia = breakpoint => {
-  //       matches() {
-
-  //       }
-  //       ;
-  //     };
-  //     const wrapper = shallow(<App />);
-  //     const foo = "extra-small";
-  //     expect(wrapper.state().breakpoint).toEqual(foo);
-  //   });
 });

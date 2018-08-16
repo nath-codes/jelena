@@ -30,6 +30,7 @@ class App extends Component {
     this.setBreakpoint();
   }
 
+  /* istanbul ignore next */
   setBreakpoint() {
     if (window.matchMedia(`(min-width: ${large})`).matches) {
       this.setState({ breakpoint: "large" });
