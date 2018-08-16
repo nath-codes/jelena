@@ -1,5 +1,6 @@
 import axios from "axios";
 
+/* istanbul ignore next */
 const generateEmailText = fields => {
   const {
     attending,
