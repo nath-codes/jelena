@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "enzyme": "^3.4.1",
     "enzyme-adapter-react-16": "^1.2.0",
+    "enzyme-to-json": "^3.3.4",
     "lodash": "^4.17.10",
     "polished": "^1.9.2",
     "react": "^16.3.2",
@@ -26,6 +27,9 @@
     "eject": "react-scripts eject"
   },
   "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!<rootDir>/node_modules/",
