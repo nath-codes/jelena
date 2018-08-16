@@ -48,8 +48,6 @@ class Form extends Component {
   }
 
   handleSubmit(event) {
-    console.log(event);
-
     event.preventDefault();
     this.setState({ sending: true });
 

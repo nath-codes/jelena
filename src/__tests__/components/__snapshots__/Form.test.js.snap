@@ -1,0 +1,475 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> displays meal choices when guest is attending  1`] = `
+<styled.form
+  onSubmit={[Function]}
+>
+  <styled.div>
+    <styled.input
+      name="fullName"
+      onChange={[Function]}
+      placeholder="Enter your name here"
+      required="required"
+      type="text"
+      value=""
+    />
+  </styled.div>
+  <styled.h3>
+    Attending
+  </styled.h3>
+  <styled.div>
+    <styled.ul
+      inline={true}
+    >
+      <styled.li
+        orphan={true}
+      >
+        <styled.label>
+          <styled.input
+            name="attending"
+            onChange={[Function]}
+            type="radio"
+            value="Yes"
+          />
+          Yes
+        </styled.label>
+      </styled.li>
+      <styled.li>
+        <styled.label>
+          <styled.input
+            name="attending"
+            onChange={[Function]}
+            type="radio"
+            value="No"
+          />
+          No
+        </styled.label>
+      </styled.li>
+    </styled.ul>
+  </styled.div>
+  <div>
+    <styled.h3>
+      Starter
+    </styled.h3>
+    <styled.div>
+      <styled.ul>
+        <styled.li>
+          <styled.label>
+            <styled.input
+              checked={false}
+              name="starter"
+              onChange={[Function]}
+              required="required"
+              type="radio"
+              value="Grilled vegetable platter (vegan)"
+            />
+            Grilled vegetable platter 
+            <span>
+              (vegan)
+            </span>
+          </styled.label>
+        </styled.li>
+        <styled.li>
+          <styled.label>
+            <styled.input
+              checked={false}
+              name="starter"
+              onChange={[Function]}
+              type="radio"
+              value="Ham hock terrine (gf)"
+            />
+            Ham hock terrine 
+            <span>
+              (gf)
+            </span>
+          </styled.label>
+        </styled.li>
+      </styled.ul>
+    </styled.div>
+    <styled.h3>
+      Main
+    </styled.h3>
+    <styled.div>
+      <styled.ul>
+        <styled.li>
+          <styled.label>
+            <styled.input
+              checked={false}
+              name="main"
+              onChange={[Function]}
+              required="required"
+              type="radio"
+              value="Roast lamb with dauphinoise potatoes (gf)"
+            />
+            Roast lamb with dauphinoise potatoes 
+            <span>
+              (gf)
+            </span>
+          </styled.label>
+        </styled.li>
+        <styled.li>
+          <styled.label>
+            <styled.input
+              checked={false}
+              name="main"
+              onChange={[Function]}
+              type="radio"
+              value="Vegetable tagine (vegan)"
+            />
+            Vegetable tagine 
+            <span>
+              (vegan)
+            </span>
+          </styled.label>
+        </styled.li>
+      </styled.ul>
+    </styled.div>
+    <styled.h3>
+      Desserts
+    </styled.h3>
+    <styled.div>
+      <styled.ul>
+        <styled.li>
+          <styled.label>
+            <styled.input
+              checked={false}
+              name="dessert"
+              onChange={[Function]}
+              required="required"
+              type="radio"
+              value="Lemon tart"
+            />
+            Lemon tart
+          </styled.label>
+        </styled.li>
+        <styled.li>
+          <styled.label>
+            <styled.input
+              checked={false}
+              name="dessert"
+              onChange={[Function]}
+              type="radio"
+              value="Brandy tart (gf) (vegan)"
+            />
+            Brandy tart 
+            <span>
+              (gf) (vegan)
+            </span>
+          </styled.label>
+        </styled.li>
+      </styled.ul>
+    </styled.div>
+    <styled.div>
+      <styled.input
+        name="dietaryRequirements"
+        onChange={[Function]}
+        placeholder="Any dietary requirements?"
+        type="text"
+        value=""
+      />
+    </styled.div>
+  </div>
+  <styled.button
+    active={false}
+    type="submit"
+  >
+    Submit
+  </styled.button>
+</styled.form>
+`;
+
+exports[`<Form /> displays success message when form is submitted 1`] = `
+<styled.form
+  onSubmit={[Function]}
+>
+  <styled.div>
+    <styled.input
+      name="fullName"
+      onChange={[Function]}
+      placeholder="Enter your name here"
+      required="required"
+      type="text"
+      value=""
+    />
+  </styled.div>
+  <styled.h3>
+    Attending
+  </styled.h3>
+  <styled.div>
+    <styled.ul
+      inline={true}
+    >
+      <styled.li
+        orphan={true}
+      >
+        <styled.label>
+          <styled.input
+            name="attending"
+            onChange={[Function]}
+            type="radio"
+            value="Yes"
+          />
+          Yes
+        </styled.label>
+      </styled.li>
+      <styled.li>
+        <styled.label>
+          <styled.input
+            name="attending"
+            onChange={[Function]}
+            type="radio"
+            value="No"
+          />
+          No
+        </styled.label>
+      </styled.li>
+    </styled.ul>
+  </styled.div>
+  <styled.button
+    active={false}
+    type="submit"
+  >
+    Submit
+  </styled.button>
+  <styled.div
+    className="message"
+  >
+    Your RSVP has been recieved.
+  </styled.div>
+</styled.form>
+`;
+
+exports[`<Form /> renders correctly 1`] = `
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: montserrat;
+  font-size: 0.8999999999999999rem;
+  width: 100%;
+}
+
+.c6 > span {
+  font-size: 12px;
+  margin-left: auto;
+  padding-left: 6px;
+}
+
+.c2 {
+  border: solid 3px #1b56c5;
+  border-radius: 3px;
+  font-family: montserrat;
+  font-size: 0.8999999999999999rem;
+  height: 2.4rem;
+  padding: 0 0 0 0.6rem;
+  width: 100%;
+}
+
+.c7 {
+  margin-right: 0.6rem;
+}
+
+.c1 {
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  margin: 0 0 2.4rem;
+  padding: 0;
+}
+
+.c1 [object Object]::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.c3 {
+  color: #1b56c5;
+  font-family: bebas-neue;
+  font-size: 1.7999999999999998rem;
+  line-height: 2.4rem;
+  margin: 0 0 1.2rem;
+}
+
+.c9 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background: #1b56c5;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: bebas-neue;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c4 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 li:nth-child(2) {
+  margin-left: 1.2rem;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.2rem;
+  margin-bottom: 0.6rem;
+  margin-bottom: 0;
+}
+
+.c5:last-child {
+  margin-bottom: 0;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.c8:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 28.799999999999997rem;
+  width: 100%;
+}
+
+.c0 .message {
+  margin: 1.2rem 0;
+}
+
+@media (min-width:576px) {
+  .c6 > span {
+    margin-left: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 > span {
+    font-size: 14px;
+  }
+}
+
+<form
+  className="c0"
+  onSubmit={[Function]}
+>
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      name="fullName"
+      onChange={[Function]}
+      placeholder="Enter your name here"
+      required="required"
+      type="text"
+      value=""
+    />
+  </div>
+  <h3
+    className="c3"
+  >
+    Attending
+  </h3>
+  <div
+    className="c1"
+  >
+    <ul
+      className="c4"
+    >
+      <li
+        className="c5"
+      >
+        <label
+          className="c6"
+        >
+          <input
+            className="c7"
+            name="attending"
+            onChange={[Function]}
+            type="radio"
+            value="Yes"
+          />
+          Yes
+        </label>
+      </li>
+      <li
+        className="c8"
+      >
+        <label
+          className="c6"
+        >
+          <input
+            className="c7"
+            name="attending"
+            onChange={[Function]}
+            type="radio"
+            value="No"
+          />
+          No
+        </label>
+      </li>
+    </ul>
+  </div>
+  <button
+    className="c9"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
