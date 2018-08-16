@@ -47,11 +47,11 @@ class Form extends Component {
     this.setState({ [name]: value });
   }
 
-  handleSubmit(event) {
+  async handleSubmit(event) {
     event.preventDefault();
     this.setState({ sending: true });
 
-    const response = {};
+    const response = await sendMail(this.state);
     this.handleResponse(response);
   }
 
