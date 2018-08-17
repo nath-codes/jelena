@@ -6,6 +6,8 @@ import { ThemeProvider } from "styled-components";
 import Form from "../../components/Form";
 import theme from "../../constants/theme";
 
+jest.mock("../../services/send-email", () => () => Promise.resolve());
+
 describe("<Form />", () => {
   it("renders correctly", () => {
     const tree = renderer
@@ -95,18 +97,17 @@ describe("<Form />", () => {
       starter: ""
     };
 
-    it("should submit the form", () => {
+    it("should submit the form", async () => {
       const wrapper = shallow(<Form />);
       const instance = wrapper.instance();
-      const sendMailMock = jest.fn();
       const handleResponseMock = jest.fn();
       const mockEvent = {
         preventDefault: () => {}
       };
-      instance.handleResponse = handleResponseMock;
-      instance.handleSubmit(mockEvent);
 
-      expect(handleResponseMock).toBeCalled();
+      instance.handleResponse = handleResponseMock;
+      await instance.handleSubmit(mockEvent);
+      expect(handleResponseMock).toHaveBeenCalled();
     });
 
     it("should clear form state on success", () => {
